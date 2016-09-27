@@ -27,6 +27,11 @@ group :development, :test do
   gem 'rest-client'
 end
 
+group :test do
+  gem 'vcr'
+  gem 'webmock'
+end
+
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
