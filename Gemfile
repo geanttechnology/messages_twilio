@@ -24,6 +24,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'poltergeist'
   gem 'dotenv-rails'
+  gem 'rest-client'
 end
 
 group :development do
