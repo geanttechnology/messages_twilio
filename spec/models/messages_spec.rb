@@ -5,4 +5,10 @@ describe Message, :vcr => true do
     message = Message.new(body: 'hi', to: '111111', from: '5038500733')
     message.save.should be false
   end
+
+  it "adds an error if the number is invalid" do
+    message = Message.new(body: 'hi', to: '111111', from: '5038500733')
+    message.save
+    message.errors[:base].should eq ["The 'To' number 111111 is not a valid phone number."]
+  end
 end
