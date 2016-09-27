@@ -9,11 +9,21 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new(message_params)
-    if @message.save
-      flash[:notice] = "Your message was sent!"
-      redirect_to messages_path
-    else
-      render "new"
+
+    respond_to do |format|
+      format.html do
+        if @message.save
+          flash[:notice] = "Your message was sent!"
+          redirect_to messages_path
+        else
+          render "new"
+        end
+      end
+      format.js do
+        @message.save
+      end
+
+
     end
   end
 
