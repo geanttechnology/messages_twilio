@@ -64,6 +64,7 @@ Shoulda::Matchers.configure do |config|
 end
 
 VCR.configure do |c|
+  c.ignore_localhose = true
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.configure_rspec_metadata!

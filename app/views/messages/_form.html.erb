@@ -2,7 +2,15 @@
 
 <%= form_for @message, id: "new_message_form", remote: true do |f| %>
   <%= f.label :to %>
-  <%= f.text_field :to %>
+  <%= f.select :to,
+  options_for_select(
+  [
+    ['someone', '5038500733'],
+    ['another person', '9713731374']
+  ]
+), {:include_blank => 'Choose and Phone Number:'},
+   {:class => "form-control"}
+ %>
   <%= f.label :from %>
   <%= f.text_field :from %>
   <%= f.label :body %>
