@@ -1,4 +1,4 @@
 $('#new_message_form').remove();
 $('#new_message_link').show();
 
-$('#message_list').append("<li><To: <%= @message.to %> | From: <%= @message.from %> | %= @message.body %></li>");
+$('#message_list').append("<li>To: <%= @message.to %> | From: <%= @message.from %> | <%= @message.body %></li>");
