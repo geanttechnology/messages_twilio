@@ -15,6 +15,9 @@ Build an app that lets users send text messages to their friends. Some user stor
 * As a user, I want to save contacts to an address book, so that it's easy to text them again without re-typing their phone number.
 * As a user, I want to send a message to more than one person at once, so that I can mass text my friends.
 
+Original lesson can be found here:
+https://www.learnhowtoprogram.com/rails/apis/texting-apps-two-day-project
+
 ## Setup/Installation Requirements
 
 ```
