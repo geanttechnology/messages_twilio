@@ -1,6 +1,6 @@
 #Texting Application with Twilio API
 
-## Ruby on Rails - Pair Programing Project
+## Ruby on Rails - Week 4 - Pair Programing Project
 
 an app that lets users send text messages to their friends.
 
