@@ -1,24 +1,67 @@
-# README
+#Texting Application with Twilio API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby on Rails - Pair Programing Project
 
-Things you may want to cover:
+an app that lets users send text messages to their friends.
 
-* Ruby version
+By Maldon Meehan & James Turello
 
-* System dependencies
+## Description
 
-* Configuration
+Texting Application with Twilio API
+Build an app that lets users send text messages to their friends. Some user stories are provided for basic contact and texting but add some user stories for a broader website that incorporates texting functionality.
 
-* Database creation
+* As a user, I want to send a text message to a phone number, so that I can send texts from the web. Hint: Follow along with the lesson.
+* As a user, I want to save contacts to an address book, so that it's easy to text them again without re-typing their phone number.
+* As a user, I want to send a message to more than one person at once, so that I can mass text my friends.
 
-* Database initialization
+## Setup/Installation Requirements
 
-* How to run the test suite
+```
+$ git clone https://github.com/maldonmeehan/messages_twilio.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Install required gems:
+```
+$ bundle
+```
 
-* Deployment instructions
+Run Postgres:
+```
+$ postgres
+```
 
-* ...
+Open a new window and run:
+```
+$ rake db:create
+```
+```
+rake db:migrate && rake db:test:prepare
+```
+
+```
+$ rails s
+```
+
+Navigate to `http://localhost:3000` in your browser of choice.
+
+## Known Bugs
+
+No known bugs at this point
+
+## Support and contact details
+
+If you have any questions please feel free to contact Maldon on github
+
+## Technologies Used
+
+* Ruby on Rails
+* Postgres
+* Twilio API
+
+### License
+
+MIT License
+
+Copyright (c) 2016, **Maldon Meehan & James Turello, Epicodus**
+
