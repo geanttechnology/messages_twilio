@@ -67,4 +67,3 @@ If you have any questions please feel free to contact Maldon on github
 MIT License
 
 Copyright (c) 2016, **Maldon Meehan & James Turello, Epicodus**
-
